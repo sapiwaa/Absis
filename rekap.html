@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Guru</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="rekap.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>SMK NEGERI 1 KOTA BEKASI</h2>
+    <ul>
+      <li><a href="rekap.html"><i class="ri-calendar-check-line"></i> Rekap Kehadiran Siswa</a></li>
+      <li><a href="index.html"><i class="ri-logout-circle-line"></i> Keluar</a></li>
+    </ul>
+  </div>
+
+  <!-- Konten Utama -->
+  <div class="container">
+    <h1>Rekap Kehadiran Siswa</h1>
+
+    <div class="table-container">
+      <table class="rekap-table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>NIS</th>
+            <th>Nama</th>
+            <th>Kelas</th>
+            <th>Jurusan</th>
+            <th>Status</th>
+            <th>Waktu Absen</th>
+            
+          </tr>
+        </thead>
+        <tbody id="data-absen">
+          <tr>
+            <td colspan="8" class="loading">Memuat data...</td>
+          </tr>
+        </tbody>
+
+      </table>
+      
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="rekap.js"></script>
+
+</body>
+</html>

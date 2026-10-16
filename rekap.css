@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background: linear-gradient(to bottom, #D3D3D3, #808080);
+  color: #fff;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar ul li {
+  width: 100%;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li a i {
+  font-size: 20px;
+}
+
+
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.rekap-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rekap-table th {
+    background: #4d4d4d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.rekap-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.rekap-table tr:hover {
+    background: #f2f2f2;
+}

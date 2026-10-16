@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background: linear-gradient(to bottom, #D3D3D3, #808080);
+  color: #fff;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar ul li {
+  width: 100%;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li a i {
+  font-size: 20px;
+}
+
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Konten */
+.content-page {
+  display: none;
+}
+
+.content-page.active {
+  display: block;
+}
+
+/* Form Absensi */
+.absen-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  max-width: 500px;
+}
+
+.absen-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.absen-form input,
+.absen-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.absen-form button {
+  width: 100%;
+  background: linear-gradient(to right, #D3D3D3, #808080);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
